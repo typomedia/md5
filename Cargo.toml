@@ -1,0 +1,15 @@
+[package]
+name = "md5"
+version = "1.0.0"
+authors = ["Philipp Speck <philipp@typo.media>"]
+edition = "2021"
+
+[profile.release]
+strip = true
+lto = true
+opt-level = "z"
+panic = "abort"
+
+[dependencies]
+clap = "4.5"
+md5 = "0.7.0"
